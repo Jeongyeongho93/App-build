@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pagestyle.css"/>
+    <title>Momentum app</title>
+  </head>
+  <body>
+  <div id="login-form">
+    <input type="text" placeholder="what is your name" />
+    <button>Log In</button>
+  </div>
+    <script src="page.js"></script>
+  </body>
+</html>
+--------------------------------------------------------
+
+//As the developer see something is keep following beside html url.
+//Whether remove it then the webstart will re-start, reason why the form is submitting.
+
+  <form id="login-form">
+    <input 
+    required maxlength="15" 
+    type="text" 
+    placeholder="what is your name" />
+    <button>Log In</button> 
+  </form>
+
+// case1 : Press the button in the input value 
+// Since the button in the form tag acts as a "submission", it is left to be submitted as the default "submit" of the button tag, 
+// and the validity notification provided by html also appears. 
+
+or
+
+  <form id="login-form">
+    <input 
+    required maxlength="15" 
+    type="text" 
+    placeholder="what is your name" />
+    <input type="submit" value="Log In" /> // case2 : Click the input that the type form is submit
+  </form>
+
+HTML Rule
+1. Since The developer press the enter in the form that there isn't exist any input value and it will submit automatically by html function appears.
+2. When the developer would press the button in the form as in that case also the form will automatically be submitted.
+
+//Submitting form - Reason : Since at the moment that we would like to rather than the web-browser would refresh but directly save the users information.
+//Following above code that if the devloper submit and website will refresh. we do not want to refresh for entire of website everytime.
+
+----------------------------------------------------------------------------------------------------------------
+
+
