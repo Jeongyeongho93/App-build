@@ -56,11 +56,12 @@ function onLoginSubmit(event) {
 
 function handleLinkClick(event){
     event.preventDefault();
-    console.log(event);
+    console.log(loginInput.value);
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
 link.addEventListener("click", handleLinkClick);
+-----------------------------------------------------------------------------------------------
 
 
 
